@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <title>Hola</title>
+</head>
+<body>
+  <br>
+  <form action="greet" method="post">
+    {% for message in get_flashed_messages() %}
+    <p>{{message}}</p>
+    {% endfor %}
+    <br>
+    <input type="text" name="name_input">
+    <br>
+    <input type="submit" value="GREET" id="greet">
+  </form>
+</body>
